@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=);
+* {
+    margin: 0;
+    padding: 1;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: url(http://static.asiawebdirect.com/m/kl/portals/langkawi-info-com/homepage/top10s/pagePropertiesImage/best-of-langkawi.jpg.jpg);
+    color: #fff;
+}
+section {
+    background-color: rgba(0, 0, 0, 0.349);
+    margin-top: 500px;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+.title {
+    font-size: 3rem;
+    margin: 2rem 0rem;
+}
+.faq {
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+}
+.qustion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.qustion h3 {
+    font-size: 1.8rem;
+}
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+    -webkit-transition: max-height 1.4s ease;
+    -moz-transition: max-height 1.4s ease;
+    -ms-transition: max-height 1.4s ease;
+    -o-transition: max-height 1.4s ease;
+}
+.answer p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+.faq.active .answer {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+    -webkit-animation: fade 1s ease-in-out;
+}
+.faq.active svg {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+svg {
+    transition: transform 0.5s ease-in ;
+    -webkit-transition: transform 0.5s ease-in ;
+    -moz-transition: transform 0.5s ease-in ;
+    -ms-transition: transform 0.5s ease-in ;
+    -o-transition: transform 0.5s ease-in ;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+}
+}
